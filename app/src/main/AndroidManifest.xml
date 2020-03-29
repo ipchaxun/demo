@@ -23,11 +23,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <meta-data
-            android:name="com.baidu.lbsapi.API_KEY"
-            android:value="SbqelqAVqzuYURoXBVOd27kE8MG8ztW9" >
-        </meta-data>
-        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"> </service>
+
         <activity android:name="com.manyou.ipchaxun.demo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
