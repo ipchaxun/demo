@@ -1,5 +1,6 @@
 package com.manyou.ipchaxun.demo;
 
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSuccess(IPInfo info) {
 
-                Log.e("TAG","tree info:"+info.city);
-                mTvDisplay.setText(info.toString());
+                mTvDisplay.setText(infoToString(info));
             }
 
             @Override
@@ -49,5 +49,24 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+
+    static String infoToString(IPInfo info){
+            if(info.isOK){
+                StringBuffer sb=new StringBuffer();
+                sb.append(info.ip);
+                sb.append(" ");
+                sb.append(info.country);
+                sb.append(" ");
+                sb.append(info.province);
+                sb.append(" ");
+                sb.append(info.city);
+                sb.append(" ");
+                sb.append(info.netType);
+                return sb.toString();
+            }else{
+                return "未知";
+            }
     }
 }
