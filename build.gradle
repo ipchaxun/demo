@@ -19,7 +19,7 @@ allprojects {
         google()
         jcenter()
 //        maven { url "https://gitee.com/beeshop/mavn138SDK/raw/master/" }
-        maven { url "https://raw.github.com/ipchaxun/sdk/master/" }
+        maven { url "https://raw.github.com/ipchaxun/mavn-sdk/master/" }
     }
 }
 

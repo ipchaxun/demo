@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSuccess(IPInfo info) {
 
-                mTvDisplay.setText(infoToString(info));
+                mTvDisplay.setText(info.toString());
             }
 
             @Override
@@ -52,21 +52,4 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    static String infoToString(IPInfo info){
-            if(info.isOK){
-                StringBuffer sb=new StringBuffer();
-                sb.append(info.ip);
-                sb.append(" ");
-                sb.append(info.country);
-                sb.append(" ");
-                sb.append(info.province);
-                sb.append(" ");
-                sb.append(info.city);
-                sb.append(" ");
-                sb.append(info.netType);
-                return sb.toString();
-            }else{
-                return "未知";
-            }
-    }
 }
