@@ -13,12 +13,15 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:textSize="16sp"
+        android:gravity="center_horizontal"
         android:textColor="#333333"
         android:id="@+id/tv_display"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:background="#23ff0000"
         android:id="@+id/tv_get_ip"
         android:layout_marginTop="30dp"
