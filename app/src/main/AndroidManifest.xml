@@ -24,8 +24,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <meta-data
-            android:name="com.amap.api.v2.apikey"
-            android:value="73ab002b49f30c24aab4ba7d6857e819"/>
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="hVrg4zMm3afbFF7Rv3pnY3s4Gwv7djan" >
+        </meta-data>
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"> </service>
         <activity android:name="com.manyou.ipchaxun.demo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
